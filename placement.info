@@ -1,0 +1,8 @@
+﻿<Placement>
+  <Place Parts_SlideShare="Content:10" />
+  <Place Parts_SlideShare_Edit="Content:after" />
+
+  <Match DisplayType="SummaryAdmin">
+    <Place Parts_SlideShare="-" />
+  </Match>
+</Placement>
