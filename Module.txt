@@ -1,0 +1,12 @@
+﻿Name: SlideShare
+AntiForgery: enabled
+Author: Arana Software, Jay Harris
+Website: https://github.com/aranasoft/OrchardCMS-SlideShareModule
+Version: 1.0.1
+OrchardVersion: 1.0
+Description: Provide SlideShare presentations as an attachable Content Part
+Features:
+	Arana.SlideShare:
+		Name: SlideShare
+		Description: Provide SlideShare presentations as an attachable Content Part
+		Category: Social

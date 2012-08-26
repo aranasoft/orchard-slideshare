@@ -1,0 +1,17 @@
+﻿@if(!string.IsNullOrWhiteSpace(Model.SlideShareId as string))
+{
+    var startSlide = Model.StartFromSlide as int?;
+    var startSlideQS = startSlide.HasValue
+                                    ? string.Format("startSlide={0}", Model.StartFromSlide.Value)
+                                    : string.Empty;
+    var slideShareUrl = string.Format(
+        "http://www.slideshare.net/slideshow/embed_code/{0}?{1}",
+        Model.SlideShareId,
+        startSlideQS
+        );
+    <iframe src="@slideShareUrl"
+            width="427" height="356" frameborder="0" marginwidth="0" marginheight="0"
+            scrolling="no" allowfullscreen
+            style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px">
+    </iframe>
+}

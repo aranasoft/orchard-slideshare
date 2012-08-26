@@ -1,0 +1,20 @@
+﻿@model SlideShare.Models.SlideSharePart
+<fieldset>
+  <legend>SlideShare Fields</legend>
+  <div class="editor-label">
+    @Html.LabelFor(model => model.SlideShareId)
+  </div>
+  <div class="editor-field">
+    @Html.TextBoxFor(model => model.SlideShareId)
+    @Html.ValidationMessageFor(model => model.SlideShareId)
+    <span class="hint">@T("This code (ex: 3243546) can be found in the Embed information")</span>
+  </div>
+  <div class="editor-label">
+    @Html.LabelFor(model => model.StartFromSlide)
+  </div>
+  <div class="editor-field">
+    @Html.TextBoxFor(model => model.StartFromSlide)
+    @Html.ValidationMessageFor(model => model.StartFromSlide)
+    <span class="hint">@T("If left blank, the presentation will start at the beginning")</span>
+  </div>
+</fieldset>
