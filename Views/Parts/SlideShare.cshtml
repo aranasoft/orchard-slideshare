@@ -1,8 +1,9 @@
-﻿@if(!string.IsNullOrWhiteSpace(Model.SlideShareId as string))
+﻿@model dynamic
+@if(!string.IsNullOrWhiteSpace(Model.SlideShareId as string))
 {
     var startSlide = Model.StartFromSlide as int?;
     var startSlideQS = startSlide.HasValue
-                                    ? string.Format("startSlide={0}", Model.StartFromSlide.Value)
+                                    ? string.Format("startSlide={0}", startSlide)
                                     : string.Empty;
     var slideShareUrl = string.Format(
         "http://www.slideshare.net/slideshow/embed_code/{0}?{1}",
